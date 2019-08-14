@@ -1,5 +1,5 @@
 {
-  "name": "open-wc-ts-template",
+  "name": "open-wc-ts-app",
   "version": "0.0.0",
   "description": "Template which extends @open-wc with TypeScript",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "lib"
   ],
   "scripts": {
-    "prepare": "tsc",
     "test": "karma start --coverage",
     "lint:eslint": "eslint --ext .js,.html,.ts . --quiet --ignore-path .gitignore",
     "format:eslint": "eslint --ext .js,.html,.ts . --quiet --fix --ignore-path .gitignore",
@@ -21,6 +20,8 @@
     "test:legacy": "karma start --compatibility all --coverage",
     "test:legacy:watch": "karma start --compatibility all --auto-watch=true --single-run=false",
     "test:bs": "karma start karma.bs.config.js --compatibility all --coverage",
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
     "release": "standard-version"
   },
   "devDependencies": {
@@ -43,7 +44,11 @@
     "standard": "^12.0.1",
     "standard-version": "^6.0.1",
     "typescript": "^3.5.2",
-    "webpack-merge": "^4.1.5"
+    "webpack-merge": "^4.1.5",
+    "@open-wc/building-webpack": "^2.1.0",
+    "webpack-dev-server": "^3.8.0",
+    "webpack": "^4.28.0",
+    "webpack-cli": "^3.3.4"
   },
   "dependencies": {
     "lit-html": "^1.1.0",
