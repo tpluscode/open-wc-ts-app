@@ -42,7 +42,7 @@
     "eslint-plugin-lit": "^1.2.0",
     "husky": "^3.0.4",
     "lint-staged": "^9.2.3",
-    "standard": "^13.1.0",
+    "standard": "^14.0.0",
     "standard-version": "^7.0.0",
     "typescript": "^3.5.3",
     "webpack-merge": "^4.1.5",
