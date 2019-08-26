@@ -1,4 +1,6 @@
 import { html, LitElement, property } from 'lit-element'
+import './heading-element'
+import { toUpper } from './util'
 
 export default class TsElement extends LitElement {
   @property({ type: String })
@@ -6,7 +8,7 @@ export default class TsElement extends LitElement {
 
   public render() {
     return html`
-      <h1>${this.heading}</h1>
+      <heading-element heading="${toUpper(this.heading)}"></heading-element>
       <div><slot></slot></div>
     `
   }

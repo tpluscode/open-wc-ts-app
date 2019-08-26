@@ -1,4 +1,5 @@
 const path = require('path')
+const merge = require('webpack-merge')
 const { createDefaultConfig } = require('@open-wc/building-webpack')
 
 // if you need to support IE11 use "modern-and-legacy-config" instead.
@@ -7,6 +8,13 @@ const { createDefaultConfig } = require('@open-wc/building-webpack')
 //   input: path.resolve(__dirname, './index.html'),
 // });
 
-module.exports = createDefaultConfig({
-  input: path.resolve(__dirname, './src/index.html'),
-})
+module.exports = merge(
+  createDefaultConfig({
+    input: path.resolve(__dirname, './src/index.html'),
+  }),
+  {
+    resolve: {
+      extensions: ['.ts', '.js', '.json'],
+    },
+  },
+)
