@@ -40,7 +40,7 @@
     "@typescript-eslint/parser": "^1.13.0",
     "cz-conventional-changelog": "^3.0.2",
     "eslint-plugin-lit": "^1.2.0",
-    "husky": "^3.0.4",
+    "husky": "^3.0.5",
     "lint-staged": "^9.2.5",
     "standard": "^14.0.2",
     "standard-version": "^7.0.0",
