@@ -30,7 +30,7 @@
     "@babel/preset-typescript": "^7.6.0",
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
-    "@open-wc/building-webpack": "^2.6.0",
+    "@open-wc/building-webpack": "^2.6.1",
     "@open-wc/eslint-config": "^1.1.1",
     "@open-wc/prettier-config": "^0.1.10",
     "@open-wc/testing": "^2.3.4",
