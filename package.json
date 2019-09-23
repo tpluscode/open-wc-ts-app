@@ -46,7 +46,7 @@
     "standard-version": "^7.0.0",
     "typescript": "^3.6.3",
     "webpack-merge": "^4.2.2",
-    "webpack-dev-server": "^3.8.0",
+    "webpack-dev-server": "^3.8.1",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8"
   },
