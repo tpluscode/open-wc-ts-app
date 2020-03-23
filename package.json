@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "lit-html": "^1.2.1",
-    "lit-element": "^2.2.1"
+    "lit-element": "^2.3.1"
   },
   "husky": {
     "hooks": {
