@@ -1,4 +1,3 @@
-// @ts-ignore
 import { html, fixture, expect } from '@open-wc/testing'
 
 import '../src/ts-element.ts'

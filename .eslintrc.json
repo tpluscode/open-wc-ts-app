@@ -9,10 +9,8 @@
   "env": {
     "browser": true
   },
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2017,
-    "sourceType": "module"
+    "project": "./tsconfig.json"
   },
   "plugins": [
     "@typescript-eslint/eslint-plugin",
@@ -20,21 +18,16 @@
     "import"
   ],
   "rules": {
-    "indent": "off",
     "import/no-unresolved": "warn",
     "import/extensions": "off",
-    "space-before-function-paren": [
-      "error",
-      {
-        "named": "never"
-      }
-    ],
+    "no-shadow": "off",
+    "max-len": ["error", 200],
+    "wc/guard-super-call": "off",
+    "class-methods-use-this": "off",
     "comma-dangle": [
       "error",
       "always-multiline"
-    ],
-    "@typescript-eslint/no-var-requires": "warn",
-    "@typescript-eslint/indent": ["error", 2]
+    ]
   },
   "overrides": [
     {
