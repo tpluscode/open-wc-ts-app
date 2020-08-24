@@ -1,5 +1,5 @@
 const path = require('path')
-const merge = require('webpack-merge')
+const { merge } = require('webpack-merge')
 const { createDefaultConfig } = require('@open-wc/building-webpack')
 
 // if you need to support IE11 use "modern-and-legacy-config" instead.
